@@ -8,14 +8,30 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-              <a href="#">Информация</a>
-              <a href="#">Новости</a>
-              <a href="#">Прайс-лист</a>
-              <a href="shop.html">Магазин</a>
-              <a href="#">Контакты</a>
+          <a class="nav-item" href="#">Информация</a>
+          <a class="nav-item" href="#">Новости</a>
+          <a class="nav-item" href="#">Прайс-лист</a>
+          <a class="nav-item" href="shop.html">Магазин</a>
+          <a class="nav-item" href="#">Контакты</a>
         </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
+        </div>
+        <div class="modal-login">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+            <h2 class="modal-title">Личный кабинет</h2>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form" action="index.html" method="post">
+              <p class="modal-text">Введите пожалуйста свой логин и пароль</p>
+              <input type="text" name="username" placeholder="Логин">
+              <input type="password" name="password" placeholder="Пароль">
+              <input type="checkbox" checked id="remember"><label for="remember">Запомните меня</label>
+              <a class="lose" href="#">Я забыл пароль!</a>
+              <input type="submit" value="Войти" class="login-btn">
+            </form>
+          </div>
         </div>
       </div>
     </header>
@@ -56,7 +72,7 @@
           <h2 class="index-content-title">Фотогалерея</h2>
           <div class="gallery">
             <figure class="gallery-content">
-              <img src="img/photo-1.jpg" width="286" height="164" alt="">
+              <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a><!---Ссылка на модальное окно-->
             </figure>
             <button class="btn gallery-prev" type="button">Назад</button>
             <button class="btn gallery-next" type="button">Вперёд</button>
@@ -105,6 +121,7 @@
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn" href="#"></a>
         </div>
         <div class="footer-copyright">
           <p>Разработано:</p>
