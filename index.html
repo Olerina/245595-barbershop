@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -17,27 +18,11 @@
         <div class="user-block">
           <a class="login" href="#">Вход</a>
         </div>
-        <div class="modal-login">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-            <h2 class="modal-title">Личный кабинет</h2>
-          </div>
-          <div class="modal-body">
-            <form class="modal-form" action="index.html" method="post">
-              <p class="modal-text">Введите пожалуйста свой логин и пароль</p>
-              <input type="text" name="username" placeholder="Логин">
-              <input type="password" name="password" placeholder="Пароль">
-              <input type="checkbox" checked id="remember"><label for="remember">Запомните меня</label>
-              <a class="lose" href="#">Я забыл пароль!</a>
-              <input type="submit" value="Войти" class="login-btn">
-            </form>
-          </div>
-        </div>
       </div>
     </header>
     <main class="container">
       <div class="index-logo">
-        <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
+        <img src="img/logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
       </div>
       <section class="features">
         <div class="features-item">
@@ -72,7 +57,7 @@
           <h2 class="index-content-title">Фотогалерея</h2>
           <div class="gallery">
             <figure class="gallery-content">
-              <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a><!---Ссылка на модальное окно-->
+              <a href="#"><img src="img/gallery.jpg" width="286" height="164" alt=""></a><!---Ссылка на модальное окно-->
             </figure>
             <button class="btn gallery-prev" type="button">Назад</button>
             <button class="btn gallery-next" type="button">Вперёд</button>
@@ -129,5 +114,21 @@
         </div>
       </div>
     </footer>
+    <div class="modal-login">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+        <h2 class="modal-title">Личный кабинет</h2>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-text">Введите пожалуйста свой логин и пароль</p>
+          <input type="text" name="username" placeholder="Логин">
+          <input type="password" name="password" placeholder="Пароль">
+          <input type="checkbox" checked id="remember"><label for="remember">Запомните меня</label>
+          <a class="lose" href="#">Я забыл пароль!</a>
+          <input type="submit" value="Войти" class="login-btn">
+        </form>
+      </div>
+    </div>
   </body>
 </html>

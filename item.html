@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="header-logo">
-          <a href="index.html"><img src="img/header-logo.png" width="111" height="24" alt="Барбершоп"></a>
+          <a href="index.html"><img src="img/logo-small.png" width="111" height="24" alt="Барбершоп"></a>
         </div>
         <nav class="main-navigation">
           <a class="nav-item" href="#">Информация</a>
@@ -20,26 +21,10 @@
         <div class="user-block">
           <a class="login" href="#">Вход</a>
         </div>
-        <div class="modal-login">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-            <h2 class="modal-title">Личный кабинет</h2>
-          </div>
-          <div class="modal-body">
-            <form class="modal-form" action="index.html" method="post">
-              <p class="modal-text">Введите пожалуйста свой логин и пароль</p>
-              <input type="text" name="username" placeholder="Логин">
-              <input type="password" name="password" placeholder="Пароль">
-              <input type="checkbox" checked id="remember"><label for="remember">Запомните меня</label>
-              <a class="lose" href="#">Я забыл пароль!</a>
-              <input type="submit" value="Войти" class="login-btn">
-            </form>
-          </div>
-        </div>
       </div>
     </header>
     <main class="container">
-      <h1>Набор для путешествий "Baxter of California"</h1>
+      <h1 class="index-content-title">Набор для путешествий "Baxter of California"</h1>
       <div class="breadcrumbs">
         <a class="breadcrumbs-item" href="index.html">Главная</a>
         <a class="breadcrumbs-item" href="#">Магазин</a>
@@ -48,11 +33,11 @@
       </div>
       <div class="item-content">
         <div class="item-left">
-          <img src="#"  width="460" height="498" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+          <img src="img/item-max.jpg"  width="460" height="498" alt="Набор для путешествий BAXTER OF CALIFORNIA">
           <div class="item-left-preview">
-            <img src="#"  width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA">
-            <img src="#"  width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA">
-            <img src="#"  width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+            <img src="img/item-mini-1.jpg"  width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+            <img src="img/item-mini-2.jpg"  width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+            <img src="img/item-mini-3.jpg"  width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA">
           </div>
         </div>
         <div class="item-right">
@@ -66,7 +51,7 @@
             <p class="products-price">2 900 руб.</p>
             <a class="btn buy" href="#">Купить</a>
           </div>
-          <h2>В набор входят:</h2>
+          <h2 class="item-title">В набор входят:</h2>
           <ul class="item-composition">
             <li>Средство для умывания (50 мл)</li>
             <li>Увлажняющий крем (50 мл)</li>
@@ -98,5 +83,21 @@
         </div>
       </div>
     </footer>
+    <div class="modal-login">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+        <h2 class="modal-title">Личный кабинет</h2>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-text">Введите пожалуйста свой логин и пароль</p>
+          <input type="text" name="username" placeholder="Логин">
+          <input type="password" name="password" placeholder="Пароль">
+          <input type="checkbox" checked id="remember"><label for="remember">Запомните меня</label>
+          <a class="lose" href="#">Я забыл пароль!</a>
+          <input type="submit" value="Войти" class="login-btn">
+        </form>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,40 @@
+body {
+  font-family: "PT Sans Narrow", "Verdana";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+header,
+footer,
+.btn {
+  color: #ffffff;
+}
+header {
+  font-size: 16px;
+  line-height: 20px;
+}
+.features {
+  color: #f7f4f1;
+}
+.features-name,
+.index-content-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+.breadcrumbs-shop {
+  font-size: 14px;
+  line-height: 20px;
+}
+.active {
+  color: #aba9a7;
+}
+.catalog-left-title,
+.item-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.catalog-left-title label,
+.catalog-right {
+  line-height: 18px;
+}
