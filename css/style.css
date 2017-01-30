@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #000000;
-  min-width: 1122px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
 }
@@ -92,10 +92,10 @@ header {
 }
 .breadcrumbs {
   margin-bottom: 45px;
+  font-size: 14px;
 }
 .breadcrumbs-shop {
-  font-size: 14px;
-  line-height: 20px;
+  line-height: 20px; /*или мой фотошоп меня обманывает или на разных страницах разный line-height*/
 }
 .active {
   color: #aba9a7;
@@ -122,18 +122,15 @@ li {
 }
 .catalog-right {
   float: right;
-  width: 700px;
+  width: 720px;
   line-height: 18px;
 }
 .products-item {
   float: left;
   width: 220px;
   min-height: 290px;
-  margin-right: 15px;
+  margin-left: 20px;
   margin-bottom: 20px;
-}
-.products-item:nth-child(3n+3) {
-  margin-right: 10px;
 }
 .item-left {
   float: left;
