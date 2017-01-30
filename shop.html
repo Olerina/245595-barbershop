@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="header-logo">
           <a href="index.html"><img src="img/logo-small.png" width="111" height="24" alt="Барбершоп"></a>
         </div>
@@ -30,29 +30,51 @@
         <a class="breadcrumbs-item" href="#">Магазин</a>
         <a class="breadcrumbs-item active">Средства для ухода</a>
       </div>
-      <div class="catalog-content">
+      <div class="catalog-content clearfix">
         <div class="catalog-left">
-          <form class="catalog-left-item" action="https://echo.htmlacademy.ru" method="post">
+          <form class="catalog-left-item" action="https://echo.htmlacademy.ru" method="get">
             <section class="making">
               <h2 class="catalog-left-title">Производители</h2>
-              <input type="checkbox" checked id="baxter"><label for="baxter">Baxter of California</label>
-              <input type="checkbox" id="natty"><label for="natty">Mr Natty</label>
-              <input type="checkbox" checked id="suavecito"><label for="suavecito">Suavecito</label>
-              <input type="checkbox" id="malin"><label for="malin">Malin+Goetz</label>
-              <input type="checkbox" id="murray"><label for="murray">Murray's</label>
-              <input type="checkbox" checked id="crew"><label for="crew">American Crew</label>
+              <ul>
+                <li>
+                  <input type="checkbox" checked id="baxter"><label for="baxter">Baxter of California</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="natty"><label for="natty">Mr Natty</label>
+                </li>
+                <li>
+                  <input type="checkbox" checked id="suavecito"><label for="suavecito">Suavecito</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="malin"><label for="malin">Malin+Goetz</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="murray"><label for="murray">Murray's</label>
+                </li>
+                <li>
+                  <input type="checkbox" checked id="crew"><label for="crew">American Crew</label>
+                </li>
+              </ul>
             </section>
             <section class="catalog-left-item">
               <h2 class="catalog-left-title">Группы товаров</h2>
-              <label><input type="radio" name="product-group">Бритвенные принадлежности</label>
-              <label><input type="radio" name="product-group" checked>Средства для ухода</label>
-              <label><input type="radio" name="product-group">Аксессуары</label>
+              <ul>
+                <li>
+                  <label><input type="radio" name="product-group">Бритвенные принадлежности</label>
+                </li>
+                <li>
+                  <label><input type="radio" name="product-group" checked>Средства для ухода</label>
+                </li>
+                <li>
+                  <label><input type="radio" name="product-group">Аксессуары</label>
+                </li>
+              </ul>
             </section>
             <input type="submit" value="Показать" class="btn catalog-submit">
           </form>
         </div>
         <div class="catalog-right">
-          <section class="products">
+          <section class="products clearfix">
             <article class="products-item">
               <a href="#"><img src="img/item-1.jpg" width="220" height="165" alt="Набор для путешествий BAXTER OF CALIFORNIA"></a> <!---Этим ссылкам класс не обязателен - стилизация будет выполнена через вложенные img и p -->
               <a href="#"><p class="products-title">Набор для путешествий "BAXTER OF CALIFORNIA"</p></a>
@@ -112,7 +134,7 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -140,8 +162,8 @@
       <div class="modal-body">
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="modal-text">Введите пожалуйста свой логин и пароль</p>
-          <input type="text" name="username" placeholder="Логин">
-          <input type="password" name="password" placeholder="Пароль">
+          <input type="text" name="username" placeholder="Логин" class="modal-field">
+          <input type="password" name="password" placeholder="Пароль" class="modal-field">
           <input type="checkbox" checked id="remember"><label for="remember">Запомните меня</label>
           <a class="lose" href="#">Я забыл пароль!</a>
           <input type="submit" value="Войти" class="login-btn">
