@@ -25,8 +25,6 @@ body {
 /*Стили шапки*/
 .main-header {
   margin-bottom: 60px;
-  font-size: 16px;
-  line-height: 20px;
   color: #ffffff;
   background-color: #000000;
 }
@@ -36,16 +34,16 @@ body {
   height: 20px;
   padding-top: 22px;
 }
+.main-navigation {
+  float: left;
+  width: 780px;
+}
 .main-navigation .header-logo img{
   width: 111px;
   height: 24px;
 }
 .main-navigation .header-logo:hover {
   background: none;
-}
-.main-navigation {
-  float: left;
-  width: 780px;
 }
 .main-navigation ul {
   margin: 0;
@@ -70,8 +68,7 @@ body {
 }
 .user-block {
   float: right;
-  width: 140px;
-  min-height: 70px;
+  max-width: 140px;
 }
 .login {
   position: relative;
@@ -94,7 +91,8 @@ body {
   left: 20px;
   width: 18px;
   height: 18px;
-  background: transparent url("../img/icon-login.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -150px -15px;
   opacity: 0.3;
 }
 .login:hover::before {
@@ -103,7 +101,7 @@ body {
 /*Стили общие и главной страницы*/
 .index-logo {
   width: 368px;
-  min-height: 204px;
+  height: 204px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -118,7 +116,6 @@ body {
 .features-item {
   float: left;
   width: 300px;
-  min-height: 175px;
   margin-right: 20px;
   text-align: center;
 }
@@ -272,6 +269,7 @@ body {
 /* Стили внутренних страниц */
 .breadcrumbs {
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
   list-style: none;
 }
@@ -337,14 +335,24 @@ body {
   margin-bottom: 20px;
   margin-left: 20px;
 }
+.products-item img {
+  margin-bottom: 15px;
+}
+.about-products {
+  color: #000000;
+  text-decoration: none;
+}
 .products-title {
   text-transform: none;
-  min-height: 42px;
+  padding: 0 16px;
+  margin: 0;
 }
 .item-buy {
   padding: 0;
   margin: 0;
+  margin-top: 15px;
   height: 43px;
+  padding-left: 16px;
 }
 .products-price {
   float: left;
@@ -352,9 +360,10 @@ body {
   background-color: #e5e5e5;
   text-decoration: none;
   border: none;
+  margin: 0;
 }
 .buy {
-  float: right;
+  float: left;
   padding: 13px 16px;
   background-color: #000000;
   color: #ffffff;
@@ -373,6 +382,53 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
+.item-content {
+  display: flex;
+  justify-content: space-between;
+}
+.item-left {
+  width: 460px;
+}
+.item-left-preview {
+  display: flex;
+  justify-content: space-between;
+}
+.item-right {
+  width: 400px;
+  padding-left: 10px;
+}
+.item-right-head {
+  display: flex;
+  justify-content: space-between;
+}
+.item-article {
+  color: #aeaeae;
+}
+.item-description {
+  padding-right: 17px;
+}
+.item-right .item-buy {
+  padding: 0;
+}
+.item-composition {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+.item-composition li {
+  position: relative;
+  padding-left: 20px;
+}
+.item-composition li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
 /*Стили подвала*/
 .main-footer {
   margin-top: 65px;
@@ -385,7 +441,6 @@ body {
   float: left;
   width: 320px;
   margin-right: 60px;
-  min-height: 90px;
 }
 .footer-contacts a {
   color: #ffffff;
@@ -397,7 +452,6 @@ body {
   float: left;
   width: 180px;
   text-align: center;
-  min-height: 90px;
 }
 .footer-social p {
   margin: 0;
@@ -411,31 +465,35 @@ body {
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
+  background: #000000 url("../img/spritesheet.png") no-repeat;
   transition:
     background-position 0.5s,
     background-color 0.5s;
 }
+.social-btn:hover {
+  background: #ffffff url("../img/spritesheet.png") no-repeat;
+}
 .social-btn-vk {
-  background: #000000 url("../img/icon-vk.png") no-repeat center;
+  background-position: -141px -94px;
 }
 .social-btn-vk:hover {
-  background: #ffffff url("../img/icon-vk-black.png") no-repeat center;
+  background-position: -6px -140px;
 }
 .social-btn-fb {
-  background: #000000 url("../img/icon-fk.png") no-repeat center;
+  background-position: 0px -5px;
 }
 .social-btn-fb:hover {
-  background: #ffffff url("../img/icon-fk-black.png") no-repeat center;
+  background-position: -42px -5px
 }
 .social-btn-inst {
-  background: #000000 url("../img/icon-inst.png") no-repeat center;
+  background-position: -87px -3px;
 }
 .social-btn-inst:hover {
-  background: #ffffff url("../img/icon-inst-black.png") no-repeat center;
+  background-position: -87px -54px;
 }
 .footer-copyright {
   float: right;
-  width: 180px;
+  max-width: 180px;
 }
 .footer-copyright p {
   margin: 0;
@@ -464,7 +522,7 @@ body {
 /*======================================
  Системное оформление - не изменять
 =======================================*/
-
+/*
 body {
   padding: 3px;
 }
