@@ -5,18 +5,28 @@
     <title>Барбершоп «Бородинский»</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
-        <div class="header-logo">
-          <a href="index.html"><img src="img/logo-small.png" width="111" height="24" alt="Барбершоп"></a>
-        </div>
         <nav class="main-navigation">
-          <a class="nav-item" href="#">Информация</a>
-          <a class="nav-item" href="#">Новости</a>
-          <a class="nav-item" href="#">Прайс-лист</a>
-          <a class="nav-item" href="shop.html">Магазин</a>
-          <a class="nav-item" href="#">Контакты</a>
+          <a class="header-logo" href="index.html"><img src="img/logo-small.png" width="111" height="24" alt="Барбершоп"></a>
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
         </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
@@ -25,11 +35,17 @@
     </header>
     <main class="container">
       <h1 class="index-content-title">Средства для ухода</h1>
-      <div class="breadcrumbs breadcrumbs-shop">
-        <a class="breadcrumbs-item" href="index.html">Главная</a>
-        <a class="breadcrumbs-item" href="#">Магазин</a>
-        <a class="breadcrumbs-item active">Средства для ухода</a>
-      </div>
+      <ul  class="breadcrumbs">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="#">Магазин</a>
+        </li>
+        <li class="current">
+          Средства для ухода
+        </li>
+      </ul>
       <div class="catalog-content clearfix">
         <div class="catalog-left">
           <form class="catalog-left-item" action="https://echo.htmlacademy.ru" method="get">
@@ -56,7 +72,7 @@
                 </li>
               </ul>
             </section>
-            <section class="catalog-left-item">
+            <section class="group">
               <h2 class="catalog-left-title">Группы товаров</h2>
               <ul>
                 <li>
@@ -80,7 +96,7 @@
               <a href="#"><p class="products-title">Набор для путешествий "BAXTER OF CALIFORNIA"</p></a>
               <div class="item-buy">
                 <p class="products-price">2 900 руб.</p>
-                <a class="btn buy" href="#">Купить</a>
+                <a class="buy" href="#">Купить</a>
               </div>
             </article>
             <article class="products-item">
@@ -88,7 +104,7 @@
               <a href="#"><p class="products-title">Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</p></a>
               <div class="item-buy">
                 <p class="products-price">750 руб.</p>
-                <a class="btn buy" href="#">Купить</a>
+                <a class="buy" href="#">Купить</a>
               </div>
             </article>
             <article class="products-item">
@@ -96,7 +112,7 @@
               <a href="#"><p class="products-title">Гель для волос "SUAVECITO"</p></a>
               <div class="item-buy">
                 <p class="products-price">290 руб.</p>
-                <a class="btn buy" href="#">Купить</a>
+                <a class="buy" href="#">Купить</a>
               </div>
             </article>
             <article class="products-item">
@@ -104,7 +120,7 @@
               <a href="#"><p class="products-title">Глина для укладки волос "AMERICAN CREW"</p></a>
               <div class="item-buy">
                 <p class="products-price">500 руб.</p>
-                <a class="btn buy" href="#">Купить</a>
+                <a class="buy" href="#">Купить</a>
               </div>
             </article>
             <article class="products-item">
@@ -112,7 +128,7 @@
               <a href="#"><p class="products-title">Гель для волос "AMERICAN CREW"</p></a>
               <div class="item-buy">
                 <p class="products-price">300 руб.</p>
-                <a class="btn buy" href="#">Купить</a>
+                <a class="buy" href="#">Купить</a>
               </div>
             </article>
             <article class="products-item">
@@ -120,7 +136,7 @@
               <a href="#"><p class="products-title">Набор для бритья "BAXTER OF CALIFORNIA"</p></a>
               <div class="item-buy">
                 <p class="products-price">3 900 руб.</p>
-                <a class="btn buy" href="#">Купить</a>
+                <a class="buy" href="#">Купить</a>
               </div>
             </article>
           </section>

@@ -3,17 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
-          <a class="nav-item" href="#">Информация</a>
-          <a class="nav-item" href="#">Новости</a>
-          <a class="nav-item" href="#">Прайс-лист</a>
-          <a class="nav-item" href="shop.html">Магазин</a>
-          <a class="nav-item" href="#">Контакты</a>
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
         </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
@@ -59,7 +73,7 @@
             <figure class="gallery-content">
               <a href="#"><img src="img/gallery.jpg" width="286" height="164" alt=""></a><!---Ссылка на модальное окно-->
             </figure>
-            <button class="btn gallery-prev" type="button">Назад</button>
+            <button class="btn gallery-prev" type="button"  disabled>Назад</button>
             <button class="btn gallery-next" type="button">Вперёд</button>
           </div>
         </div>
